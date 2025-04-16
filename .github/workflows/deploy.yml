@@ -30,3 +30,10 @@ jobs:
           echo "Hello CI/CD"
           echo "Hello DevOps"
           echo "Hello World"
+
+      - name: Github Actions 자체에 저장되어 있는 변수 사용해보기
+        run: |
+          echo $GITHUB_SHA
+          echo $GITHUB_REPOSITORY
+          echo $GITHUB_WORKFLOW
+          echo $GITHUB_RUN_ID
